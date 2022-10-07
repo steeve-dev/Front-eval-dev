@@ -45,70 +45,80 @@
     </nav>
 </header>
 
-<form 
-action=""
->
+<main>
+    <form 
+        action=""
+        method=""
+        id="registerForm"
+        >
+        <div>
+            <label 
+            for="Name">
+            Nom : 
+            </label>
+            <input 
+            type="text" 
+            id="Name"
+            name="Name">
+        </div>
+        
+        <div>
+            <label 
+        for="Lastname">
+        Prénom : 
+        </label>
+        <input 
+        type="text" 
+        id="Lastname"
+        name="Lastname">
+        </div>
 
 
-  <div>
-    <label 
-    for="username">
-    Nom : 
-    </label>
-    <input 
-    type="text" 
-    id="userName">
-  </div>
-  
-  <div>
-      <label 
-  for="LastName">
-  Prénom : 
-  </label>
-  <input 
-  type="text" 
-  id="LastName">
-  </div>
+        <div>
+            <label 
+        for="email">
+        E-mail : 
+        </label>
+        <input 
+        type="text" 
+        id="email"
+        name="email">
+        </div>
 
 
-  <div>
-     <label 
-  for="mail">
-  E-mail : 
-  </label>
-  <input 
-  type="text" 
-  id="mail">
-  </div>
+        <div>
+            <label 
+        for="password">
+        Mot de passe : 
+        </label>
+        <input 
+        type="text" 
+        id="password"
+        name="password">
+        </div>
 
 
-  <div>
-    <label 
-  for="Password">
-  Mot de passe : 
-  </label>
-  <input 
-  type="text" 
-  id="password">
-  </div>
+        <div>
+            <label 
+        for="confirmation">
+        Confirmation du mot de passe : 
+        </label>
+        <input 
+        type="text" 
+        id="confirmation"
+        name="confirmation">
+
+        </div>
 
 
-  <div>
-     <label 
-  for="confirmation">
-  Confirmation du mot de passe : 
-  </label>
-  <input 
-  type="text" 
-  id="confirmation">
+        <div>
+            <input type="submit" value="s'inscrire">
+        </div>
 
-  </div>
+        <script src="../Javascript/register.js"></script>
 
-
-  <div>
-    <input 
-  type="submit">
-  </div>
-
-
-</form>
+    </form>
+</main>
+    
+</body>
+</html>
