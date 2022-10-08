@@ -17,19 +17,27 @@ async function Register() {
     Name: registerForm.elements['Name'].value,
     Lastname: registerForm.elements['Lastname'].value,
     email: registerForm.elements['email'].value,
-    password: registerForm.elements['password'].value,
+    plainPassword: registerForm.elements['password'].value,
   }
 
-  console.log(data)
-  postData('http://127.0.0.1:8000/api/users', data)
-  .then(data => {
-    if (data.success) {
-      alert('données envoyées')
+  if (registerForm.elements['password'].value == registerForm.elements['confirmation'].value){
+
+  postData('http://127.0.0.1:8000/api/users.json', data)
+  .then(data=> {
+    if (data.response) {
+      alert('data')
     }
     else {
-      alert('erreur')
+      alert('error')
     }
   })
+  
+  } else {
+
+    alert('Erreur dans le formulaire')
+    
+  }
+  
 }
 
 registerForm.onsubmit = Register

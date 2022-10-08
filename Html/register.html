@@ -9,41 +9,41 @@
 </head>
 
 <body>
-  <header>
-    <nav
-    class="header-nav">
-        <div>
-            <ul
-            class="header-nav-ul">
-                <li>
-                    <a href="index.html">Biblio</a>
-                </li>
-                <li>
-                    <a href="book_search.html">Parcourir la bibliothèque</a>
-                </li>
-                <li>
-                    <a href="user_loan.html">Prêt en cours</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <ul
-            class="header-nav-ul">
-                <li>
-                    <a href="login.html">Se connecter</a>
-                </li>
-                <li>
-                    <a href="register.html">Créer un compte</a></li>
-                <li>
-                    <a href="user_info.html">Information du compte</a>
-                </li>
-                <li>
-                    <a href="#">Se déconnecter</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
+    <header>
+        <nav
+        class="header-nav">
+            <div>
+                <ul
+                class="header-nav-ul">
+                    <li>
+                        <a href="index.html">Biblio</a>
+                    </li>
+                    <li>
+                        <a href="book_search.html">Parcourir la bibliothèque</a>
+                    </li>
+                    <li>
+                        <a href="user_loan.html" id="userLoanNav">Prêt en cours</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul
+                class="header-nav-ul">
+                    <li>
+                        <a href="login.html" id="loginNav">Se connecter</a>
+                    </li>
+                    <li>
+                        <a href="register.html" id="createAccountNav">Créer un compte</a></li>
+                    <li id="userInfoNav">
+                        <a href="user_info.html" >Information du compte</a>
+                    </li>
+                    <li id="logoutNav">
+                        <a href="index.html" id="logout">Se déconnecter</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
 <main>
     <form 
@@ -64,50 +64,50 @@
         
         <div>
             <label 
-        for="Lastname">
-        Prénom : 
-        </label>
-        <input 
-        type="text" 
-        id="Lastname"
-        name="Lastname">
+            for="Lastname">
+            Prénom : 
+            </label>
+            <input 
+            type="text" 
+            id="Lastname"
+            name="Lastname">
         </div>
 
 
         <div>
             <label 
-        for="email">
-        E-mail : 
-        </label>
-        <input 
-        type="text" 
-        id="email"
-        name="email">
+            for="email">
+            E-mail : 
+            </label>
+            <input 
+            type="mail" 
+            id="email"
+            name="email">
         </div>
 
 
         <div>
             <label 
-        for="password">
-        Mot de passe : 
-        </label>
-        <input 
-        type="text" 
-        id="password"
-        name="password">
+            for="password">
+            Mot de passe : 
+            </label>
+            <input 
+            type="password" 
+            id="password"
+            name="password"
+            autocomplete="new-password">
         </div>
 
 
         <div>
             <label 
-        for="confirmation">
-        Confirmation du mot de passe : 
-        </label>
-        <input 
-        type="text" 
-        id="confirmation"
-        name="confirmation">
-
+            for="confirmation">
+            Confirmation du mot de passe : 
+            </label>
+            <input 
+            type="password" 
+            id="confirmation"
+            name="confirmation">
         </div>
 
 
@@ -115,10 +115,12 @@
             <input type="submit" value="s'inscrire">
         </div>
 
-        <script src="../Javascript/register.js"></script>
-
+        
     </form>
 </main>
-    
+
+<script src="../node_modules/jwt-decode//build//jwt-decode.js"></script>
+<script src="../Javascript/generalDisplay.js"></script>
+<script src="../Javascript/register.js"></script>
 </body>
 </html>

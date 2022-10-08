@@ -9,56 +9,56 @@
 </head>
 
 <body>
-  <header>
-    <nav
-    class="header-nav">
-        <div>
-            <ul
-            class="header-nav-ul">
-                <li>
-                    <a href="index.html">Biblio</a>
-                </li>
-                <li>
-                    <a href="book_search.html">Parcourir la bibliothèque</a>
-                </li>
-                <li>
-                    <a href="user_loan.html">Prêt en cours</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <ul
-            class="header-nav-ul">
-                <li>
-                    <a href="login.html">Se connecter</a>
-                </li>
-                <li>
-                    <a href="register.html">Créer un compte</a></li>
-                <li>
-                    <a href="user_info.html">Information du compte</a>
-                </li>
-                <li>
-                    <a href="#">Se déconnecter</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
+    <header>
+        <nav
+        class="header-nav">
+            <div>
+                <ul
+                class="header-nav-ul">
+                    <li>
+                        <a href="index.html">Biblio</a>
+                    </li>
+                    <li>
+                        <a href="book_search.html">Parcourir la bibliothèque</a>
+                    </li>
+                    <li>
+                        <a href="user_loan.html" id="userLoanNav">Prêt en cours</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul
+                class="header-nav-ul">
+                    <li>
+                        <a href="login.html" id="loginNav">Se connecter</a>
+                    </li>
+                    <li>
+                        <a href="register.html" id="createAccountNav">Créer un compte</a></li>
+                    <li id="userInfoNav">
+                        <a href="user_info.html" >Information du compte</a>
+                    </li>
+                    <li id="logoutNav">
+                        <a href="index.html" id="logout">Se déconnecter</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
 <main>
   <section
   class="main-userInfo-section">
 
       <div>
-          Nom : Mellet
+          Nom : <span id="lastName"></span>
       </div>
 
       <div>
-          Prénom : Steeve
+          Prénom : <span id="Name"></span>
       </div>
 
       <div>
-          E-mail : test@test.com
+          E-mail : <span id="email"></span>
       </div>
 
       <button>Modifier les informations du compte</button>
@@ -67,3 +67,8 @@
 
 
 </main>
+<script src="../node_modules/jwt-decode//build//jwt-decode.js"></script>
+<script src="../Javascript/generalDisplay.js"></script>
+<script src="../Javascript/getUser.js"></script>
+</body>
+</html>
