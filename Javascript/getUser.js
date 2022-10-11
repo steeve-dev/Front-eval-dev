@@ -6,8 +6,6 @@ const decodeToken = jwt_decode(tokens)
 const userId = decodeToken.id
 console.log(userId)
 
-
-
 // Récupération du contenu du token
 
 let token = (JSON.parse(tokens).token)
@@ -26,9 +24,11 @@ fetch(`http://127.0.0.1:8000/api/users/${userId}.json`, {
       document.getElementById('lastName').innerHTML = data.Lastname
       document.getElementById('Name').innerHTML = data.Name
       document.getElementById('email').innerHTML = data.email
+
     })
   }
 })
+
 
 console.log(`Bearer ${token}`)
 

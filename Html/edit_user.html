@@ -44,9 +44,42 @@
             </div>
         </nav>
     </header>
+    <main>
+        <form 
+        action=""
+        id="editUser">
 
+            <div>
+                <label for="editLastname">Nom : </label>
+                <input 
+                type="text"
+                id="editLastName">
+            </div>
+
+            <div>
+                <label for="editName">Prénom : </label>
+                <input 
+                type="text"
+                id="editName">
+            </div>
+
+            <div>
+                <label for="editMail">E-mail</label>
+                <input 
+                type="text"
+                id="editMail">
+            </div>
+
+            <input type="submit" value="Enregistrer les modifications">
+        </form>
+        
+
+    </main>
 <script src="../node_modules/jwt-decode//build//jwt-decode.js"></script>
 <script src="../Javascript/generalDisplay.js"></script>
+<script src="../Javascript/getUser.js"></script>
+<script src="../Javascript/editUser.js"></script>
+
 </body>
 </html>
 

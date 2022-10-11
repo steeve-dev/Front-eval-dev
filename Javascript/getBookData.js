@@ -5,21 +5,47 @@ fetch('http://127.0.0.1:8000/api/books.json')
     if (response.ok){
       response.json().then(data => {
         
-      for(let book of data){
+      booksData = data;
+      document.getElementById("BookCard").innerHTML = booksData.map(
+        (book) =>
+        `<div>
+        <span
+          id="titleBook">${book.title}</span>
+        <span>par ${book.authors.Name}<span id="authorBook"></span></span>
+        </div>
+        
+        <div>
+          <span>genre : ${book.type.name}</span>
+          <span>ISBN : ${book.ISBN}</span>
+        </div>
+        
+        <div>
+          <span>Date de publication : ${book.PublishedDate}</span>
+          <span>Editeur : ${book.editor.name}</span>
+        </div>
+        
+        <div
+        class="description-book"
+        id="BookDescription">
+          Desciption : ${book.description}
+        </div>
+        
+        <div>
+          Diponibilité :
+          <ul>
+              <li>biblio 1 : XX</li>
+              <li>Biblio 2 : XX</li>
+          </ul>
+          <div>--------------------------------------------------------</div>
+        </div>`
 
 
-        document.getElementById('ISBNBook').innerHTML = book.ISBN
-        document.getElementById('titleBook').innerHTML = book.title
-        document.getElementById('authorBook').innerHTML = book.authors.Name
-        document.querySelector('#BookType').innerHTML = book.type.name
-        document.querySelector('#BookDescription').innerHTML = book.description
-        document.querySelector('#BookPublishDate').innerHTML = book.PublishedDate
-        document.querySelector('#BookEditor').innerHTML = book.editor.name
 
+      ).join('');
     }
-
-        console.log(data)
-    })
+        
+    )
+      
     } else {
       console.log('error')
     }
