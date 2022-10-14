@@ -4,7 +4,10 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #91e2ff;
+  background-color: rgba(194, 213, 233, 0.62);
+  border-radius: 25px;
+  width: 80%;
+  margin: auto;
 }
 
 .header-nav-ul {
@@ -19,19 +22,247 @@
 
 a {
   text-decoration: none;
+  color: white;
+  font-size: 20px;
+  background-color: rgba(0, 104, 176, 0.64);
+  padding: 8px;
+  border-radius: 15px;
+}
+
+a:hover {
+  background-color: white;
+  color: black;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .main-book-section {
-  background-color: lightblue;
-  width: 75%;
+  background-color: rgba(94, 181, 224, 0.8);
+  width: 60%;
   margin: auto;
   margin-top: 5vh;
   padding: 5px;
   margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.main-book-presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .description-book {
   margin-top: 10px;
+}
+
+.description-book {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.book-division {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.main-editUser {
+  background-color: #AAAAAA;
+  width: 75%;
+  padding: 5px;
+  margin: auto;
+  margin-top: 20vh;
+  width: 30vw;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.edit-save-button {
+  padding: 5px;
+  background-color: rgba(27, 33, 33, 0.74);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.edit-save-button:hover {
+  background-color: white;
+  color: rgba(27, 33, 33, 0.74);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.edit-main-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.edit-form-input, .edit-form-label, edit-save-button {
+  font-size: 30px;
+  margin-top: 8px;
+}
+
+.edit-form-input {
+  border-radius: 10px;
+}
+
+.edit-save-button {
+  font-size: 25px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+body {
+  background-color: #005CB8;
+  background-image: url("/image/bibliotheque.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.home-titre {
+  font-size: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-sous-titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.home-img-book {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+}
+
+.home-main-title {
+  background-color: rgba(236, 238, 248, 0.8);
+  width: 60%;
+  margin: auto;
+  margin-top: 150px;
+  border-radius: 30px;
+}
+
+.loginForm {
+  background-color: rgba(93, 84, 106, 0.7);
+  width: 30%;
+  margin: auto;
+  margin-top: 20vh;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+.main-login-label {
+  color: white;
+}
+
+.main-login-label, .main-login-input, .main-login-button {
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-login-input, .main-login-button {
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.main-login-button {
+  padding: 5px;
+  background-color: rgba(27, 33, 33, 0.74);
+  color: white;
+}
+
+.main-login-button:hover {
+  background-color: white;
+  color: rgba(27, 33, 33, 0.74);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.register-main-form {
+  background-color: rgba(93, 84, 106, 0.7);
+  width: 30%;
+  margin: auto;
+  margin-top: 20vh;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+.main-register-label {
+  color: white;
+}
+
+.main-register-label, .main-register-input, .main-register-button {
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-register-input, .main-register-button {
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.main-register-button {
+  padding: 5px;
+  background-color: rgba(27, 33, 33, 0.74);
+  color: white;
+}
+
+.main-register-button:hover {
+  background-color: white;
+  color: rgba(27, 33, 33, 0.74);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 .main-userInfo-section {
@@ -39,14 +270,72 @@ a {
   width: 75%;
   padding: 5px;
   margin: auto;
-  margin-top: 5vh;
+  margin-top: 20vh;
+  width: 30vw;
 }
 
-.main-loan-sction {
-  background-color: #5eb5e0;
+.userInfo-section-div {
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.userInfo-edit-button {
+  padding: 5px;
+  background-color: rgba(27, 33, 33, 0.74);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.userInfo-edit-button:hover {
+  background-color: white;
+  color: rgba(27, 33, 33, 0.74);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.main-loan-section {
+  background-color: rgba(94, 181, 224, 0.8);
   margin: auto;
   width: 75vw;
   margin-top: 5vh;
   padding: 5px;
+  width: 50vw;
+  border-radius: 25px;
+  font-size: 1.5rem;
+}
+
+.loan-division {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.userLoan-main {
+  margin-bottom: 15px;
+  border-radius: 30px;
+}
+
+.loan-info-book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=style.css.map */

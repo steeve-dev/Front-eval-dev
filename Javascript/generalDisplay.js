@@ -11,8 +11,7 @@ if (!localStorage.getItem('Token')) {
   document.getElementById('createAccountNav').style.display = 'none';
     
   
-  }
-  
+}
 
 // deconnexion de l'utilisateur
 function logout() {
@@ -21,3 +20,9 @@ function logout() {
 
 const userLogout = document.getElementById('logout')
 userLogout.onclick = logout
+
+const vérification = localStorage.getItem('Token');
+let verifToken = JSON.parse(vérification)
+// if (verifToken.code){
+//   localStorage.removeItem('Token')
+// }

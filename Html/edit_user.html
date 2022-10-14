@@ -44,33 +44,50 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main
+    id="mainEditUser"
+    class="main-editUser">
         <form 
         action=""
         id="editUser">
 
-            <div>
-                <label for="editLastname">Nom : </label>
+            <div
+            id="lastnameEdit"
+            class="edit-main-div">
+                <label 
+                for="editLastname"
+                class="edit-form-label">Nom : </label>
                 <input 
                 type="text"
-                id="editLastName">
+                id="editLastName"
+                class="edit-form-input">
             </div>
 
-            <div>
-                <label for="editName">Prénom : </label>
+            <div
+            id="nameEdit"
+            class="edit-main-div">
+                <label 
+                for="editName"
+                class="edit-form-label">Prénom : </label>
                 <input 
                 type="text"
-                id="editName">
+                id="editName"
+                class="edit-form-input">
             </div>
 
-            <div>
-                <label for="editMail">E-mail</label>
+            <div
+            id="mailEdit"
+            class="edit-main-div">
+                <label 
+                for="editMail"
+                class="edit-form-label">E-mail : </label>
                 <input 
                 type="text"
-                id="editMail">
+                id="editMail"
+                class="edit-form-input">
             </div>
 
-            <input type="submit" value="Enregistrer les modifications">
+            <input type="submit" value="Enregistrer les modifications" class="edit-save-button">
         </form>
         
 

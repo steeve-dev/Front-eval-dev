@@ -1,0 +1,25 @@
+.loginForm
+  @include user
+
+.main-login-label
+  color: white
+
+.main-login-label, .main-login-input, .main-login-button
+  font-size: 30px
+  display: flex
+  justify-content: center
+
+.main-login-input, .main-login-button
+  margin: auto
+  margin-top: 10px
+  border-radius: 10px
+
+.main-login-button
+  padding: 5px
+  background-color: rgba(27, 33, 33, 0.74)
+  color: white
+  &:hover
+    background-color: white
+    color: rgba(27, 33, 33, 0.74)
+    transition: 0.7s
+

@@ -1,5 +1,14 @@
 let editUserForm = document.getElementById('editUser')
 
+function errorForm($text, $divId){
+  let newDiv = document.createElement('p');
+  newDiv.textContent = $text;
+  let editUser = document.getElementById($divId);
+  editUser.prepend(newDiv)
+  console.log('dedans')
+  return
+}
+
 
 fetch(`http://127.0.0.1:8000/api/users/${userId}.json`, {
   method: 'GET',
@@ -41,12 +50,37 @@ async function editAccount(e) {
     email: editUserForm.elements['editMail'].value,
   }
 
+  let error = false
+
+  if (editUserForm.elements['editLastName'].value < 1){
+    errorForm('veuillez renseigner un nom', 'lastnameEdit');
+    error = true
+  }
+
+  if (editUserForm.elements['editName'].value < 1){
+    errorForm('veuillez renseigner un prènom', 'nameEdit');
+    error = true
+  }
+
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(editUserForm.elements['editMail'].value)){
+    console.log('valide mail')
+  } else {
+    errorForm('Ceci n\'est pas une adresse mail valide', 'mailEdit')
+    error = true
+  }
+
+  if (error){
+    e.preventDefault()
+    return
+  }
+
 
   postData(`http://127.0.0.1:8000/api/users/${userId}.json`, data)
   .then(async data=> {
-    console.log(data)
-    alert('data')
-    
+    let newDiv = document.createElement('p');
+    newDiv.textContent = 'Modifications enregistrées';
+    let registerName = document.getElementById('mainEditUser');
+    registerName.append(newDiv)
   })
 
 }

@@ -1,10 +1,12 @@
-
 // Récupération du token et de l'id de l'utilisateur
 
 const tokens = localStorage.getItem('Token');
 const decodeToken = jwt_decode(tokens)
 const userId = decodeToken.id
 console.log(userId)
+
+
+
 
 // Récupération du contenu du token
 
@@ -24,7 +26,6 @@ fetch(`http://127.0.0.1:8000/api/users/${userId}.json`, {
       document.getElementById('lastName').innerHTML = data.Lastname
       document.getElementById('Name').innerHTML = data.Name
       document.getElementById('email').innerHTML = data.email
-
     })
   }
 })
