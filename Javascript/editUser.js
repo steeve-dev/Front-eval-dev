@@ -10,7 +10,7 @@ function errorForm($text, $divId){
 }
 
 
-fetch(`http://127.0.0.1:8000/api/users/${userId}.json`, {
+fetch(`https://hidden-crag-69413.herokuapp.com/api/users/${userId}.json`, {
   method: 'GET',
   headers: {
     Authorization: `Bearer ${token}`,
@@ -74,8 +74,7 @@ async function editAccount(e) {
     return
   }
 
-
-  postData(`http://127.0.0.1:8000/api/users/${userId}.json`, data)
+  postData(`https://hidden-crag-69413.herokuapp.com/api/users/${userId}.json`, data)
   .then(async data=> {
     let newDiv = document.createElement('p');
     newDiv.textContent = 'Modifications enregistrées';

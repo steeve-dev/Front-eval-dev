@@ -21,7 +21,7 @@ async function login(e) {
   }
   console.log(data)
 
-  postData('http://127.0.0.1:8000/api/login_check', data)
+  postData('https://hidden-crag-69413.herokuapp.com/api/login_check', data)
   .then(data=> {
     if(data){
       console.log(data.response)

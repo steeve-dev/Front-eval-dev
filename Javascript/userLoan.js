@@ -125,7 +125,7 @@ async function loanRenewal(loanId) {
   let data = {
     Renewal: true
   }
-  postData(`http://127.0.0.1:8000/api/loans/${loanId}.json`, data)
+  postData(`https://hidden-crag-69413.herokuapp.com/api/loans/${loanId}.json`, data)
     .then(async data=> {
       console.log('entré dans la fonction de renouvellement')
       

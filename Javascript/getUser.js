@@ -14,7 +14,7 @@ let token = (JSON.parse(tokens).token)
 
 //récupération des données de l'API
 
-fetch(`http://127.0.0.1:8000/api/users/${userId}.json`, {
+fetch(`https://hidden-crag-69413.herokuapp.com/api/users/${userId}.json`, {
   method: 'GET',
   headers: {
     Authorization: `Bearer ${token}`,
