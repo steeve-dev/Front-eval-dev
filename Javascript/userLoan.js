@@ -2,7 +2,7 @@
 // Récupération du token et de l'id de l'utilisateur
 
 const tokens = localStorage.getItem('Token');
-const decodeToken = jwt_decode(tokens)
+const decodeToken = jwt_decode(tokens.token)
 const userId = decodeToken.id
 console.log(userId)
 
