@@ -36,7 +36,7 @@ async function login(e) {
         let loginFail = document.getElementById('loginForm');
         loginFail.prepend(newDiv)
       } else{
-        document.location.href = 'index.html'
+        document.location.href = '../index.html'
       }
     }
     
