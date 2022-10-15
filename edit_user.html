@@ -44,53 +44,59 @@
             </div>
         </nav>
     </header>
-    <main>
-
+    <main
+    id="mainEditUser"
+    class="main-editUser">
         <form 
-            action=""
-            id="loginForm"
-            class="loginForm">
+        action=""
+        id="editUser">
 
             <div
-            class="main-loginForm-div">
-                <label for="mail-login"
-                class="main-login-label">
-                    Email :
-                </label>
-                <input
-                        type="mail"
-                        id="mail-login"
-                        name="mail-login"
-                        class="main-login-input">
+            id="lastnameEdit"
+            class="edit-main-div">
+                <label 
+                for="editLastname"
+                class="edit-form-label">Nom : </label>
+                <input 
+                type="text"
+                id="editLastName"
+                class="edit-form-input">
             </div>
 
             <div
-            class="main-loginForm-div">
-                <label for="password-login"
-                class="main-login-label">
-                    Mot de passe :
-
-                </label>
-                <input
-                        type="password"
-                        id="password-login"
-                        name="password-login"
-                        class="main-login-input">
+            id="nameEdit"
+            class="edit-main-div">
+                <label 
+                for="editName"
+                class="edit-form-label">Prénom : </label>
+                <input 
+                type="text"
+                id="editName"
+                class="edit-form-input">
             </div>
 
             <div
-            class="main-loginForm-div">
-                <input type="submit" value="Se connecter" class="main-login-button">
+            id="mailEdit"
+            class="edit-main-div">
+                <label 
+                for="editMail"
+                class="edit-form-label">E-mail : </label>
+                <input 
+                type="text"
+                id="editMail"
+                class="edit-form-input">
             </div>
 
-
-
+            <input type="submit" value="Enregistrer les modifications" class="edit-save-button">
         </form>
+        
 
     </main>
-    
-<script src="../node_modules/jwt-decode//build//jwt-decode.js"></script>
-<script src="../Javascript/generalDisplay.js"></script>
-<script src="../Javascript/login.js"></script>
+<script src="node_modules/jwt-decode//build//jwt-decode.js"></script>
+<script src="Javascript/generalDisplay.js"></script>
+<script src="Javascript/getUser.js"></script>
+<script src="Javascript/editUser.js"></script>
+
 </body>
 </html>
+

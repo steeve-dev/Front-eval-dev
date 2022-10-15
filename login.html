@@ -44,37 +44,53 @@
             </div>
         </nav>
     </header>
+    <main>
 
-<main>
-  <section
-  class="main-loan-section"
-  id="userLoan">
-  <!-- <div>
-    <span>Titre</span>
-    <span>par Auteur</span>
-</div>
+        <form 
+            action=""
+            id="loginForm"
+            class="loginForm">
 
-<div>
-    <span>genre</span>
-    <span>ISBN : XXXX-XXXX-XXXX</span>
-</div>
+            <div
+            class="main-loginForm-div">
+                <label for="mail-login"
+                class="main-login-label">
+                    Email :
+                </label>
+                <input
+                        type="mail"
+                        id="mail-login"
+                        name="mail-login"
+                        class="main-login-input">
+            </div>
 
-<div>
-    <span>Date de publication : Date</span>
-    <span>Editeur : Xxxxxx</span>
-</div>
+            <div
+            class="main-loginForm-div">
+                <label for="password-login"
+                class="main-login-label">
+                    Mot de passe :
 
-<div>
-    <span>Début du prêt : XX/XX/XXXX - Fin du prêt : XX/XX/XXXX</span>
-    <button>Prolonger la durée du prêt</button>
-</div> -->
+                </label>
+                <input
+                        type="password"
+                        id="password-login"
+                        name="password-login"
+                        class="main-login-input">
+            </div>
 
-  </section>
-</main>
+            <div
+            class="main-loginForm-div">
+                <input type="submit" value="Se connecter" class="main-login-button">
+            </div>
 
-<script src="../node_modules/jwt-decode//build//jwt-decode.js"></script>
-<script src="../Javascript/generalDisplay.js"></script>
-<script src="../Javascript/userLoan.js"></script>
 
+
+        </form>
+
+    </main>
+    
+<script src="node_modules/jwt-decode//build//jwt-decode.js"></script>
+<script src="Javascript/generalDisplay.js"></script>
+<script src="Javascript/login.js"></script>
 </body>
 </html>
