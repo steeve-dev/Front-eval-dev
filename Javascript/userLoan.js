@@ -2,7 +2,7 @@
 // Récupération du token et de l'id de l'utilisateur
 
 const tokens = localStorage.getItem('Token');
-const decodeToken = jwt_decode(tokens.token)
+const decodeToken = jwt_decode(tokens)
 const userId = decodeToken.id
 console.log(userId)
 
@@ -18,7 +18,7 @@ function dateFormat(date){
   return result;
 }
 
-// fonction d'affichage du bouton en fonction du prêt
+// fonction d'affichage du bouton en fonction de la prolongation des prêts
 
 function diplayLoanButton(renew){
   if (renew){
