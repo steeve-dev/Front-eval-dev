@@ -1,6 +1,6 @@
 
 
-fetch('https://hidden-crag-69413.herokuapp.com/api/books')
+fetch('https://hidden-crag-69413.herokuapp.com/api/books.json')
   .then(async response => {
     if (response.ok){
       response.json().then(data => {
