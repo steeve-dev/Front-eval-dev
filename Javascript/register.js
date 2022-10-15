@@ -66,7 +66,7 @@ async function Register(e) {
 
   console.log('dehors');
 
-  postData('https://hidden-crag-69413.herokuapp.com/api/users', data)
+  postData('https://hidden-crag-69413.herokuapp.com/api/users.json', data)
   .then(data=> {
     if (data.response) {
       alert('data')
